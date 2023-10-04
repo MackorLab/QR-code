@@ -278,4 +278,4 @@ model: https://huggingface.co/DionTimmer/controlnet_qrcode-control_v1p_sd15
     )
 
 blocks.queue(concurrency_count=1, max_size=20)
-blocks.launch(share=bool(os.environ.get("SHARE", False)))
+blocks.launch(share=bool(os.environ.get("SHARE", False),debug=True, max_threads=True, share=True, inbrowser=True))
